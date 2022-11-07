@@ -74,7 +74,7 @@ public class eShopTests {
         Assert.assertNotNull(addToCart);
         addToCart.click();
 
-        if(chromeDriver.getPageSource().contains("empty()")){
+        if(chromeDriver.getPageSource().contains("empty")){
             System.out.println("Your cart is empty");
         }
         else{
